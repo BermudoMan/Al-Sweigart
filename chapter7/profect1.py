@@ -31,3 +31,11 @@ for groups in phone_Regex.findall(text):
     matches.append(phone_Num)
 for groups in email_Regex.findall(text):
     matches.append(groups[0])
+
+#4)объединение совпадений в одну строку для копир. в буфер
+if len(matches) > 0:
+    pyperclip.copy('\n'.join(matches))
+    print('Скопировано в буфер обмена:')
+    print('\n'.join(matches))
+else:
+    print('Тел. номера и emails не обнаружены!')
