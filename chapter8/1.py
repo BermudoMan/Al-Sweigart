@@ -47,3 +47,18 @@ for filename in os.listdir('Z:\\!GIT\\Al-SWEIGART\\chapter8\\1'):
     total_size = total_size + os.path.getsize(os.path.join('Z:\\!GIT\\Al-SWEIGART\\chapter8\\1', filename))
 print(total_size)
 
+print('--------------------------------')
+
+#проверка существования пути
+
+print(os.path.exists('Z:\\!GIT\\Al-SWEIGART\\chapter8\\1'))
+print(os.path.exists('D:\\!GIT\\Al-SWEIGART\\chapter8\\1'))
+print(os.path.isfile('Z:\\!GIT\\Al-SWEIGART\\chapter8\\1'))
+print(os.path.isdir('Z:\\!GIT\\Al-SWEIGART\\chapter8\\1'))
+print(os.path.isfile('Z:\\!GIT\\Al-SWEIGART\\chapter8\\1\\pic.jpg'))
+
+#проверка наличия флешки
+
+print(os.path.exists('D:\\'))
+
+print('--------------------------------')
