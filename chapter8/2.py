@@ -20,5 +20,3 @@ bacon.write('Bacon is not a vegetable')
 bacon.close()
 bacon = open('bacon.txt', 'r')
 print(bacon.read())
-    
-
