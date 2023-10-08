@@ -1,6 +1,6 @@
 import numpy
 def determinant(matrix):
-    M =numpy.linalg.det(matrix)             
+    M = round(numpy.linalg.det(matrix), 0)         
     print(M)
 
 
