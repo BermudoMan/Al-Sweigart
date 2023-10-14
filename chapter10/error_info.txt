@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "z:\!GIT\Al-Sweigart\chapter10\2.py", line 5, in <module>
+    raise Exception('Это сообщение об ошибке.')
+Exception: Это сообщение об ошибке.
