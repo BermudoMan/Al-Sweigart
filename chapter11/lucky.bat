@@ -1,0 +1,1 @@
+@py.exe Z:\!GIT\Al-Sweigart\chapter11\lucky.py Beatiful Soup %*
