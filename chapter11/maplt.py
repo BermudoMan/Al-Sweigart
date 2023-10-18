@@ -10,4 +10,4 @@ else:
     # получение адресв из буфера обмена
     address = pyperclip.paste()
 
-webbrowser.open('https://www.google.com/maps' + address)
+webbrowser.open('https://www.google.com/maps/place/' + address)
