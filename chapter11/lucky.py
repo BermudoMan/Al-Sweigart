@@ -7,6 +7,7 @@ import sys
 import webbrowser
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 
 print('Гуглим...') # отображается при загрузке страницы Google
 
@@ -22,9 +23,9 @@ print('Гуглим...') # отображается при загрузке ст
 driver = webdriver.Chrome()
 x = driver.get('http://google.com/search?q=' + 'homes')
 
-link_elems = x.find_element_by_class_name('LC20lb MBeuO DKV0Md')
+link_elems = x.find_elements_by_xpath("//h3[contains(@class, 'LC20lb MBeuO DKV0Md']")
 print(link_elems)
 
-#num_open = min(5, len(link_elems))
-#for i in range(num_open):
-#    webbrowser.open('http://google.com' + link_elems[i].get('href'))
+num_open = min(5, len(link_elems))
+for i in range(num_open):
+    webbrowser.open('http://google.com' + link_elems[i].get('href'))

@@ -2,7 +2,6 @@
 # download_xkcd.py -загружает все комиксы xkcd
 
 import requests, os, bs4
-
 url = 'https://xkcd.com' # начальный url
 os.makedirs('xkcd', exist_ok=True) # куда сохранять
 
