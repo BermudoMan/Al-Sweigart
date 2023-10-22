@@ -20,7 +20,12 @@ browser.get('https://imgur.com/')
 
 browser.implicitly_wait(2)
 try:
-     search_line = browser.find_elements_by_xpath("//input[contains(@placeholder, 'Images, #tags, @users oh my!')]")
+     search_line = browser.find_elements_by_xpath("//*[contains(@placeholder)]")
+#     search_line.send_keys(Keys.PAGE_DOWN)
+#     search_line.send_keys(Keys.TAB)
+#     search_line.send_keys(Keys.TAB)
+#     search_line.send_keys(Keys.TAB)
+#     search_line.send_keys(Keys.TAB)
 #     search_line.click()
      search_line.send_keys('pickles')
      print('Найден элемент <%s> с данным именем класса!' % (search_line.tag_name))
